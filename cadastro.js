@@ -47,23 +47,17 @@ $(document).ready(function () {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Selecionando o formulário
     const form = document.querySelector('form');
 
-    // Adicionando um ouvinte para o evento submit do formulário
     form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Impede o envio padrão do formulário
+        event.preventDefault();
 
-        // Obtendo os valores dos campos de senha
         const senha = document.getElementById('senha').value;
         const confirmarSenha = document.getElementById('confirmarSenha').value;
 
-        // Comparando as senhas
         if (senha === confirmarSenha) {
-            // Se as senhas forem iguais, o formulário é enviado
             form.submit();
         } else {
-            // Se as senhas não forem iguais, exibe uma mensagem de erro
             alert('As senhas não coincidem. Por favor, insira senhas iguais.');
         }
     });
