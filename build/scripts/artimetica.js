@@ -1,0 +1,1 @@
+const somar=require("./sum"),multi=require("./multi");console.log("somar: ",somar(10,20)),console.log("multi: ",multi(20,863));
